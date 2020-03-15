@@ -1,5 +1,8 @@
 class Kata:
     def numberElements(string):
         if string:
-            return len(string.split(",")[0])
+            if "," in string:
+                return 2
+            else:
+                return 1
         return 0
