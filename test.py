@@ -27,3 +27,6 @@ class KataTest(TestCase):
 
     def test_min_element_1(self):
         self.assertEqual(Kata.minElement(self.string_1), 0, "String con un numero")
+
+    def test_min_element_2(self):
+        self.assertEqual(Kata.minElement("-1, 0"), -1, "String con dos numeros")
