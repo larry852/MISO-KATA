@@ -23,3 +23,6 @@ class KataTest(TestCase):
 
     def test_min_element_0(self):
         self.assertEqual(Kata.minElement(self.string_empty), None, "String vacío")
+
+    def test_min_element_1(self):
+        self.assertEqual(Kata.minElement("0"), 0, "String con un numero")
