@@ -1,3 +1,3 @@
 class Kata:
     def numberElements(string):
-        pass
+        return 0
