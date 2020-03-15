@@ -5,3 +5,6 @@ class Kata:
                 return len(string.split(","))
             return 1
         return 0
+
+    def minElement(string):
+        return 0
