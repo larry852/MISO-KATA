@@ -7,12 +7,13 @@ class KataTest(TestCase):
 
     def setUp(self):
         self.string_empty = ""
+        self.string_1 = "0"
 
     def test_number_elements_0(self):
         self.assertEqual(Kata.numberElements(self.string_empty), 0, "String vacío")
 
     def test_number_elements_1(self):
-        self.assertEqual(Kata.numberElements("0"), 1, "String con un numero")
+        self.assertEqual(Kata.numberElements(self.string_1), 1, "String con un numero")
 
     def test_number_elements_2(self):
         self.assertEqual(Kata.numberElements("0,1"), 2, "String con dos numeros")
@@ -25,4 +26,4 @@ class KataTest(TestCase):
         self.assertEqual(Kata.minElement(self.string_empty), None, "String vacío")
 
     def test_min_element_1(self):
-        self.assertEqual(Kata.minElement("0"), 0, "String con un numero")
+        self.assertEqual(Kata.minElement(self.string_1), 0, "String con un numero")
