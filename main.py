@@ -7,4 +7,6 @@ class Kata:
         return 0
 
     def minElement(string):
+        if string:
+            return 0
         return None
