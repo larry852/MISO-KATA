@@ -9,6 +9,6 @@ class Kata:
     def minElement(string):
         if string:
             if "," in string:
-                return -1
+                return int(min(string.split(",")))
             return 0
         return None
