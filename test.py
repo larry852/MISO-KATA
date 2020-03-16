@@ -54,4 +54,4 @@ class KataTest(TestCase):
         self.assertEqual(Kata.avgElements(self.string_1), 0, "4. String con un numero")
 
     def test_avg_element_2(self):
-        self.assertEqual(Kata.avgElements(self.string_2), 0.5, "4. String con un numero")
+        self.assertEqual(Kata.avgElements(self.string_2), 0.5, "4. String con dos numeros")
