@@ -9,7 +9,7 @@ class KataTest(TestCase):
         self.string_empty = ""
         self.string_1 = "0"
         self.string_2 = "0,1"
-        self.string_N = "0,1,2,156,564"
+        self.string_N = "0,1,2,3,4"
 
     def test_number_elements_0(self):
         self.assertEqual(Kata.numberElements(self.string_empty), 0, "1. String vacío")
@@ -45,7 +45,7 @@ class KataTest(TestCase):
         self.assertEqual(Kata.maxElement(self.string_2), 1, "3. String con dos numeros")
 
     def test_max_element_N(self):
-        self.assertEqual(Kata.maxElement(self.string_N), 564, "3. String con N numeros")
+        self.assertEqual(Kata.maxElement(self.string_N), 4, "3. String con N numeros")
 
     def test_avg_element_0(self):
         self.assertEqual(Kata.avgElements(self.string_empty), None, "4. String vacio")
@@ -55,3 +55,6 @@ class KataTest(TestCase):
 
     def test_avg_element_2(self):
         self.assertEqual(Kata.avgElements(self.string_2), 0.5, "4. String con dos numeros")
+
+    def test_avg_element_N(self):
+        self.assertEqual(Kata.avgElements(self.string_N), 2, "4. String con N numeros")
