@@ -9,4 +9,6 @@ class Kata:
             return int(min(string.split(",")))
 
     def maxElement(string):
+        if string:
+            return 0
         return None
