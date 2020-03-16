@@ -46,3 +46,6 @@ class KataTest(TestCase):
 
     def test_max_element_N(self):
         self.assertEqual(Kata.maxElement(self.string_N), 564, "3. String con N numeros")
+
+    def test_avg_element_0(self):
+        self.assertEqual(Kata.avgElements(self.string_empty), None, "4. String vacio")
