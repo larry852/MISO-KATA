@@ -34,3 +34,6 @@ class KataTest(TestCase):
 
     def test_min_element_N(self):
         self.assertEqual(Kata.minElement(self.string_N), 0, "2. String con N numeros")
+
+    def test_max_element_0(self):
+        self.assertEqual(Kata.maxElement(self.string_empty), None, "3. String vacío")

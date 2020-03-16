@@ -7,3 +7,6 @@ class Kata:
     def minElement(string):
         if string:
             return int(min(string.split(",")))
+
+    def maxElement(string):
+        return 0
