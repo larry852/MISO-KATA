@@ -37,3 +37,6 @@ class KataTest(TestCase):
 
     def test_max_element_0(self):
         self.assertEqual(Kata.maxElement(self.string_empty), None, "3. String vacío")
+
+    def test_max_element_1(self):
+        self.assertEqual(Kata.maxElement(self.string_1), 0, "3. String con un numero")
