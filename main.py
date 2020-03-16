@@ -13,4 +13,4 @@ class Kata:
             return int(max(string.split(",")))
 
     def avgElements(string):
-        return 0
+        return None
